@@ -3,5 +3,12 @@ body {
 }
 
 /* colors */
+/* margins & paddings */
+.footer {
+  background-color: #353535;
+}
+.footer__list {
+  margin: 0px;
+}
 
 /*# sourceMappingURL=style.css.map */
