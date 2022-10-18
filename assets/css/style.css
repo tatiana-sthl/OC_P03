@@ -4,7 +4,7 @@
 .head {
   display: flex;
   justify-content: center;
-  margin: 1rem;
+  margin: 1rem 0 0.6rem 0;
 }
 .head__logo {
   width: 40%;
@@ -14,8 +14,8 @@
   display: flex;
   justify-content: center;
   background-color: #ddd9d9;
+  box-shadow: inset 0px 5px 10px -8px;
   padding: 1rem;
-  padding-right: -10rem;
 }
 .localisation__search {
   background-color: transparent;
@@ -32,11 +32,27 @@
   margin: -1.5rem;
 }
 
+.reservation {
+  background-color: rgb(245, 244, 244);
+  padding: 1rem 3rem;
+  text-align: center;
+}
+
 .footer {
   background-color: #353535;
 }
 .footer__list {
   margin: 0px;
+}
+
+button {
+  border: transparent;
+  border-radius: 25px;
+  padding: 0.8rem 1rem;
+  margin: 0.2rem 0 1.8rem 0;
+  background: linear-gradient(350deg, rgb(147, 86, 220) 45%, rgb(255, 121, 218) 100%);
+  box-shadow: 2px 10px 20px -8px rgba(0, 0, 0, 0.48);
+  color: white;
 }
 
 #restaurants {
