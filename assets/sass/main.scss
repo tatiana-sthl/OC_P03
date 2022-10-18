@@ -1,6 +1,12 @@
-@import "base/base";
-
 @import "utils/variables";
+@import "utils/mixins";
 
 @import "layout/header";
 @import "layout/footer";
+
+@import "components/buttons";
+
+@import "pages/home";
+@import "pages/restaurants";
+
+@import "base/base";

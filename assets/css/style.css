@@ -1,14 +1,35 @@
-body {
-  font-family: "roboto", sans-serif;
-}
-
 /* colors */
 /* margins & paddings */
+/* width */
 .footer {
   background-color: #353535;
 }
 .footer__list {
   margin: 0px;
+}
+
+#restaurants {
+  background-color: rgb(235, 235, 235);
+}
+
+.menu {
+  width: 100%;
+}
+img {
+  width: 100%;
+}
+
+body {
+  font-family: "roboto", sans-serif;
+  margin: 0px;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
 }
 
 /*# sourceMappingURL=style.css.map */

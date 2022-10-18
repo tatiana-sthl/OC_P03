@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":["../sass/base/_base.scss","../sass/utils/_variables.scss","../sass/layout/_footer.scss"],"names":[],"mappings":"AAAA;EACI;;;ACDJ;AAQA;ACRA;EACI,kBDIW;;ACFX;EACI,QDKI","file":"style.css"}
+{"version":3,"sourceRoot":"","sources":["../sass/utils/_variables.scss","../sass/layout/_footer.scss","../sass/pages/_home.scss","../sass/base/_base.scss"],"names":[],"mappings":"AAAA;AASA;AAGA;ACZA;EACI,kBDKW;;ACHX;EACI,QDMI;;;AEVZ;EACI,kBFIY;;;AEDhB;EACI,OFQQ;;AEGZ;EACI,OFJQ;;;AGbZ;EACI;EACA,QHQQ;;;AGLZ;EACI;;;AAGJ;EACI","file":"style.css"}
