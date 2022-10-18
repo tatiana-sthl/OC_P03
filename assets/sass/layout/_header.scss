@@ -1,0 +1,32 @@
+.head {
+    display: flex;
+    justify-content: center;
+    margin: 1rem;
+
+    &__logo {
+        width: 40%;
+    }
+}
+
+.localisation {
+    display: flex;
+    justify-content: center;
+    background-color: darken($color-bg-grey, 10%);
+    padding: 1rem;
+    padding-right: -10rem;
+
+    &__search {
+        background-color: transparent;
+        &::placeholder {
+            color: black;
+            opacity: 1;
+            font-weight: bold;
+            font-size: 16px;
+            font-family: "roboto", sans-serif;
+            text-align: center;
+        }
+        &:placeholder-shown {
+            margin: -1.5rem;
+        }
+    }
+}
