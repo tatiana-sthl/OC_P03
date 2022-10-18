@@ -55,6 +55,15 @@ button {
   color: white;
 }
 
+#explanation {
+  margin: 3rem 1rem;
+}
+
+.step-container__click {
+  display: flex;
+  align-items: center;
+}
+
 #restaurants {
   background-color: rgb(245, 244, 244);
 }

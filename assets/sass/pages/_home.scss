@@ -1,3 +1,15 @@
+#explanation {
+    margin: 3rem 1rem;
+}
+
+.step-container {
+
+    &__click {
+        display: flex;
+        align-items: center;
+    }
+}
+
 #restaurants {
     background-color: $color-bg-grey;
 }
