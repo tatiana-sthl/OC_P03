@@ -75,9 +75,10 @@ button {
   display: flex;
   align-items: center;
   background-color: rgb(245, 244, 244);
-  border-radius: 15px;
-  margin: 0.5rem 0 0.5rem 0.5rem;
-  padding: 0.3rem;
+  border-radius: 20px;
+  margin: 0.5rem 0 1.5rem 0.5rem;
+  padding: 0.4rem;
+  box-shadow: 2px 10px 20px -8px rgba(0, 0, 0, 0.2);
 }
 .step-container__number {
   background-color: #9356DC;
@@ -97,12 +98,23 @@ button {
 
 #restaurants {
   background-color: rgb(245, 244, 244);
-}
-
-.menu {
   width: 100%;
+  padding-top: 2rem;
 }
 
+.restaurants__title {
+  margin-left: 1rem;
+}
+.restaurants__container {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 1rem;
+}
+.restaurants__card {
+  background-color: white;
+  border-radius: 20px;
+  margin: 0.8rem 0;
+}
 img {
   width: 100%;
 }
