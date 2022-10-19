@@ -36,7 +36,8 @@
 #restaurants {
     background-color: $color-bg-grey;
     width: $width-100;
-    padding-top: 2rem;
+    padding: 3rem 0;
+    margin-bottom: -1.5rem;
 }
 
 .restaurants {
@@ -56,6 +57,7 @@
         border-radius: 20px;
         margin: 0.8rem 0;
         width: $width-100;
+        box-shadow: 2px 10px 20px -8px rgb(0 0 0 / 20%);
     }
 
     &__click {
@@ -84,6 +86,7 @@
             bottom: 100%;
             width: 14%;
             font-size: 14px;
+            font-weight: bold;
             padding: 0.4rem 1rem;
             left: 74%;
             border-radius: 2px;
@@ -93,23 +96,23 @@
 
     &__text {
         display: flex;
-        flex-wrap: wrap;
-        padding: 1rem;
+        justify-content: space-between;
+        padding: 1rem 2rem 1rem 1rem;
         color: black;
         font-size: 20px;
 
         &__title {
             margin: $no-margin;
-            width: 80%;
         }
 
         &__localisation {
-            margin-top: 0.2rem;
-            width: 80%;
+            margin: 0.2rem 0 0 0;
+
         }
 
         &__icons {
-            
+            display: flex;
+            align-items: center;
         }
     }
 
