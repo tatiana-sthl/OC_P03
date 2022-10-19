@@ -45,6 +45,18 @@
   margin: 0px;
 }
 
+.fa-mobile-screen {
+  margin-right: 2rem;
+}
+
+.fa-list-ul {
+  margin-right: 1.7rem;
+}
+
+.fa-store {
+  margin-right: 1.5rem;
+}
+
 button {
   border: transparent;
   border-radius: 25px;
@@ -62,6 +74,25 @@ button {
 .step-container__click {
   display: flex;
   align-items: center;
+  background-color: rgb(245, 244, 244);
+  border-radius: 15px;
+  margin: 0.5rem 0 0.5rem 0.5rem;
+  padding: 0.3rem;
+}
+.step-container__number {
+  background-color: #9356DC;
+  color: white;
+  border-radius: 20px;
+  padding: 3px 8px;
+  margin: 0.5rem 1rem 0.5rem -1rem;
+}
+.step-container__icon {
+  color: grey;
+  margin-left: 0.5rem;
+}
+.step-container__text {
+  color: black;
+  font-weight: bold;
 }
 
 #restaurants {
@@ -71,6 +102,7 @@ button {
 .menu {
   width: 100%;
 }
+
 img {
   width: 100%;
 }

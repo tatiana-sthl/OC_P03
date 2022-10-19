@@ -7,6 +7,28 @@
     &__click {
         display: flex;
         align-items: center;
+        background-color: $color-bg-grey;
+        border-radius: 15px;
+        margin: 0.5rem 0 0.5rem 0.5rem;
+        padding: 0.3rem;
+    }
+
+    &__number {
+        background-color: $color-primary;
+        color: white;
+        border-radius: 20px;
+        padding: 3px 8px;
+        margin: 0.5rem 1rem 0.5rem -1rem;
+    }
+
+    &__icon {
+        color: grey;
+        margin-left: 0.5rem;
+    }
+
+    &__text {
+        color: black;
+        font-weight: bold;
     }
 }
 
@@ -16,14 +38,6 @@
 
 .menu {
     width: $width-100;
-
-    &__container {
-
-    }
-
-    &__card {
-
-    }
 }
 
 img {
