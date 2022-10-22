@@ -19,7 +19,7 @@
         <!--Logo-->
         <div class="head">
             <a href="../index.html">
-                <i class="fa-solid fa-arrow-left"></i>
+                <i class="fa-solid fa-arrow-left fa-lg"></i>
             </a>
             <img class="head__logo" src="../assets/img/ohmyfood.png" alt="logo Oh my food">
         </div>
@@ -29,16 +29,20 @@
     <main>
         
         <!-- image under the menu -->
-        <div>
-            <img src="../assets/img/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="">
+        <div class="img-container">
+            <img class="img-container__img" src="../assets/img/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="">
         </div>
 
         <!-- menu -->    
-        <div>
+        <div class="menu">
 
             <!-- title -->
-            <h1></h1>
-            <i></i>
+            <div class="menu__div-title">
+                <h1 class="menu__title">La palette du goût</h1>
+                <div class="restaurants__text__icons">
+                    <i class="fa-regular fa-heart fa-2xl"></i>
+                </div>
+            </div>
 
             <!-- starters -->
             <h2></h2>
@@ -77,32 +81,28 @@
             </div>
 
             <!-- button command -->
-            <button></button>
+            <button>Commander</button>
 
         </div>
         
     </main>
     
-    <footer>
-
-        <h1>Oh my food</h1>
-        <div>
-            <ul>
-                <li>
-                    <a href=""><i></i></a>
-                </li>
-                <li>
-                    <a href=""><i></i></a>
-                </li>
-                <li>
-                    <a href=""></a>
-                </li>
-                <li>
-                    <a href=""></a>
-                </li>
-            </ul>
-        </div>
-    
+    <footer class="footer">
+        <h1 class="footer__title">ohmyfood</h1>
+        <ul class="footer__list">
+            <li class="footer__list__detail">
+                <a href="#" class="footer__point"><i class="fa-solid fa-utensils fa-sm"></i>Proposer un restaurant</a>
+            </li>
+            <li class="footer__list__detail">
+                <a href="#" class="footer__point"><i class="fa-solid fa-handshake-angle fa-xs"></i>Devenir partenaire</a>
+            </li>
+            <li class="footer__list__detail">
+                <a href="#" class="footer__point">Mentions légales</a>
+            </li>
+            <li class="footer__list-detail">
+                <a href="mailto:ohmyfood@example.com" class="footer__point">Contact</a>
+            </li>
+        </ul>
     </footer>
 
 </body>

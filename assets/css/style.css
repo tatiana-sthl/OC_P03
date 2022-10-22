@@ -4,6 +4,8 @@
 .head {
   display: flex;
   justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
   margin: 1rem 0 0.6rem 0;
 }
 .head__logo {
@@ -78,6 +80,16 @@
 
 .fa-handshake-angle {
   margin-right: 0.6rem;
+}
+
+.fa-arrow-left {
+  color: black;
+  position: absolute;
+  left: 1rem;
+}
+
+.fa-2xl {
+  padding-right: 1rem;
 }
 
 button {
@@ -183,6 +195,29 @@ button {
 .restaurants__text__icons {
   display: flex;
   align-items: center;
+}
+
+.img-container {
+  width: 100%;
+}
+.img-container__img {
+  width: 100%;
+}
+
+.menu {
+  background-color: rgb(245, 244, 244);
+  padding: 1rem 1rem 0 1rem;
+  border-radius: 40px 40px 0 0;
+  position: relative;
+  top: -4rem;
+}
+.menu__div-title {
+  display: flex;
+  justify-content: space-between;
+}
+.menu__title {
+  font-family: "shrikhand", sans-serif;
+  font-weight: 200;
 }
 
 body {
