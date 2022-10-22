@@ -41,8 +41,23 @@
 .footer {
   background-color: #353535;
 }
+.footer__title {
+  font-family: "shrikhand", sans-serif;
+  color: white;
+  font-size: 20px;
+  font-weight: 200;
+  margin: 0px;
+  padding: 1rem;
+}
 .footer__list {
   margin: 0px;
+  padding: 0 0 2rem 1rem;
+}
+.footer__list__detail {
+  margin: 0.5rem 0;
+}
+.footer__point {
+  color: white;
 }
 
 .fa-mobile-screen {
@@ -55,6 +70,14 @@
 
 .fa-store {
   margin-right: 1.5rem;
+}
+
+.fa-utensils {
+  margin-right: 0.8rem;
+}
+
+.fa-handshake-angle {
+  margin-right: 0.6rem;
 }
 
 button {

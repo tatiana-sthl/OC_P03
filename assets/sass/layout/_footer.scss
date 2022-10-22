@@ -1,7 +1,25 @@
 .footer {
     background-color: $color-footer;
+
+    &__title {
+        font-family: 'shrikhand', sans-serif;
+        color: white;
+        font-size: 20px;
+        font-weight: 200;
+        margin: $no-margin;
+        padding: 1rem;
+    }
     
     &__list {
         margin: $no-margin;
+        padding: 0 0 2rem 1rem;
+
+        &__detail {
+            margin: 0.5rem 0;
+        }
+    }
+
+    &__point {
+        color: white;
     }
 }
