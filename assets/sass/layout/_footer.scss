@@ -8,11 +8,22 @@
         font-weight: 200;
         margin: $no-margin;
         padding: 1rem;
+
+        @include desktop-only {
+            display: flex;
+            justify-content: center;
+        }
     }
     
     &__list {
         margin: $no-margin;
         padding: 0 0 2rem 1rem;
+
+        @include desktop-only {
+            display: flex;
+            flex-flow: column;
+            align-items: center;
+        }
 
         &__detail {
             margin: 0.5rem 0;

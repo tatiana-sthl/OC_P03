@@ -5,6 +5,10 @@
     display: flex;
     justify-content: center;
 
+    @include desktop-only {
+        height: 500px;
+    }
+
     &__img {
         width: 100%;
         object-fit: cover;
@@ -22,11 +26,19 @@
     &__div-title {
         display: flex;
         justify-content: space-between;
+
+        @include desktop-only {
+            place-content: center;
+        }
     }
 
     &__title {
         font-family: 'shrikhand', sans-serif;
         font-weight: 100;
+
+        @include desktop-only {
+            margin-right: 2rem;
+        }
     }
 
     &__title-h2 {
@@ -53,15 +65,25 @@
     flex-direction: column;
     flex-wrap: wrap;
 
+    @include desktop-only {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
     &__starters {
         margin: 2rem 0 0 0;
+
+        @include desktop-only {
+            margin: 2rem;
+        }
     }
 
     &__card {
         display: flex;
         justify-content: space-between;
         margin: 0.8rem -0.2rem;
-        padding:0.8rem 1.5rem 0.8rem 0.8rem;
+        padding: 0.8rem;
         border-radius: 20px;
         background-color: white;
         box-shadow: 2px 2px 15px #bdbdbd;
