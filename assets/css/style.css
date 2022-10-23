@@ -206,7 +206,7 @@ button {
 
 .menu {
   background-color: rgb(245, 244, 244);
-  padding: 1rem 1rem 0 1rem;
+  padding: 0.5rem 1rem 0 1rem;
   border-radius: 40px 40px 0 0;
   position: relative;
   top: -4rem;
@@ -217,7 +217,52 @@ button {
 }
 .menu__title {
   font-family: "shrikhand", sans-serif;
-  font-weight: 200;
+  font-weight: 100;
+}
+.menu__title-h2 {
+  align-self: flex-start;
+  position: relative;
+  margin: 0 0 1.5rem 0;
+  font-weight: 300;
+  font-size: 20px;
+}
+.menu__title-h2::after {
+  content: "";
+  width: 3rem;
+  height: 0.2rem;
+  background-color: #99E2D0;
+  position: absolute;
+  top: 1.8rem;
+  left: 0rem;
+}
+
+.menu-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.menu-container__starters {
+  margin: 2rem 0 0 0;
+}
+.menu-container__card {
+  display: flex;
+  justify-content: space-between;
+  margin: 0.8rem -0.2rem;
+  padding: 0.8rem 1.5rem 0.8rem 0.8rem;
+  border-radius: 20px;
+  background-color: white;
+  box-shadow: 2px 2px 15px #bdbdbd;
+}
+.menu-container__card__title-h3 {
+  margin: 0 0 0.2rem 0;
+}
+.menu-container__card__p-text {
+  margin: 0px;
+}
+.menu-container__card__p-number {
+  align-self: flex-end;
+  font-weight: bold;
+  margin: 0;
 }
 
 body {

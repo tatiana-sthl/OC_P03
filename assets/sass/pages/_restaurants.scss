@@ -9,7 +9,7 @@
 
 .menu {
     background-color: $color-bg-grey;
-    padding: 1rem 1rem 0 1rem;
+    padding: 0.5rem 1rem 0 1rem;
     border-radius: 40px 40px 0 0;
     position: relative;
     top: -4rem;
@@ -21,6 +21,59 @@
 
     &__title {
         font-family: 'shrikhand', sans-serif;
-        font-weight: 200;
+        font-weight: 100;
     }
+
+    &__title-h2 {
+        align-self: flex-start;
+        position: relative;
+        margin: 0 0 1.5rem 0;
+        font-weight: 300;
+        font-size: 20px;
+
+        &::after { 
+            content: ""; 
+            width: 3rem;
+            height: 0.2rem;
+            background-color: $color-tertiary;
+            position: absolute;
+            top: 1.8rem;
+            left: 0rem;
+        }
+    }
+}
+
+.menu-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    &__starters {
+        margin: 2rem 0 0 0;
+    }
+
+    &__card {
+        display: flex;
+        justify-content: space-between;
+        margin: 0.8rem -0.2rem;
+        padding:0.8rem 1.5rem 0.8rem 0.8rem;
+        border-radius: 20px;
+        background-color: white;
+        box-shadow: 2px 2px 15px #bdbdbd;
+
+        &__title-h3 {
+            margin: 0 0 0.2rem 0;
+        }
+
+        &__p-text {
+            margin: $no-margin;
+        }
+
+        &__p-number {
+            align-self: flex-end;
+            font-weight: bold;
+            margin: 0;
+        }
+    }
+
 }
