@@ -7,3 +7,9 @@ button {
     box-shadow: 2px 10px 20px -8px rgba(0,0,0,0.48);
     color: white;
 }
+
+.button-command {
+    padding: 1rem 3rem;
+    font-size: 16px;
+    margin: $no-margin;
+}

@@ -1,9 +1,13 @@
 .img-container {
 
     width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
 
     &__img {
         width: 100%;
+        object-fit: cover;
     }
 }
 
@@ -13,6 +17,7 @@
     border-radius: 40px 40px 0 0;
     position: relative;
     top: -4rem;
+    margin-bottom: -4rem;
 
     &__div-title {
         display: flex;
@@ -75,5 +80,10 @@
             margin: 0;
         }
     }
+}
 
+.button-command-container {
+    display: flex;
+    justify-content: center;
+    padding: 3rem 0 4rem 0;
 }
