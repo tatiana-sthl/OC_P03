@@ -7,15 +7,30 @@
 
     &__logo {
         width: 40%;
+        @include desktop-only {
+            width: 20%;
+        }
     }
 }
 
 .localisation {
-    display: flex;
-    justify-content: center;
-    background-color: darken($color-bg-grey, 10%);
-    box-shadow: inset 0px 5px 10px -8px;
-    padding: 1rem;
+    @include desktop-only {
+        display: flex;
+        justify-content: center;
+        margin: 1rem;
+    }
+
+    &__container {
+        display: flex;
+        justify-content: center;
+        background-color: darken($color-bg-grey, 10%);
+        box-shadow: inset 0px 5px 10px -8px;
+        padding: 1rem;
+        @include desktop-only {
+            border-radius: 30px;
+            width: 20%;
+        }
+    }
 
     &__search {
         background-color: transparent;

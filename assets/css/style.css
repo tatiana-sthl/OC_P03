@@ -11,13 +11,31 @@
 .head__logo {
   width: 40%;
 }
+@media screen and (min-width: 992px) {
+  .head__logo {
+    width: 20%;
+  }
+}
 
-.localisation {
+@media screen and (min-width: 992px) {
+  .localisation {
+    display: flex;
+    justify-content: center;
+    margin: 1rem;
+  }
+}
+.localisation__container {
   display: flex;
   justify-content: center;
   background-color: #ddd9d9;
   box-shadow: inset 0px 5px 10px -8px;
   padding: 1rem;
+}
+@media screen and (min-width: 992px) {
+  .localisation__container {
+    border-radius: 30px;
+    width: 20%;
+  }
 }
 .localisation__search {
   background-color: transparent;
