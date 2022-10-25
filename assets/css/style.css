@@ -119,8 +119,37 @@
   left: 1rem;
 }
 
+.fa-xl {
+  line-height: 100% !important;
+}
+
 .fa-2xl {
   padding-right: 1rem;
+  line-height: 100% !important;
+}
+
+.heart-icon {
+  position: absolute;
+  background-color: white;
+  transition: opacity 600ms ease-in-out;
+}
+.heart-icon--bg {
+  background-color: rgb(245, 244, 244);
+}
+.heart-icon:hover {
+  opacity: 0;
+  cursor: pointer;
+}
+.heart-icon__animation {
+  background: linear-gradient(350deg, rgb(147, 86, 220) 45%, rgb(255, 121, 218) 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* add bg grey behind the heart in pages retaurants */
+.bg-grey {
+  background-color: rgb(245, 244, 244);
 }
 
 button {
@@ -275,7 +304,8 @@ button:hover {
   margin: 0.2rem 0 0 0;
 }
 .restaurants__text__icons {
-  display: flex;
+  display: flex; /* To center icon */
+  justify-content: center;
   align-items: center;
 }
 

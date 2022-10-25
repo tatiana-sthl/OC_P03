@@ -144,11 +144,11 @@
 
         &__localisation {
             margin: 0.2rem 0 0 0;
-
         }
 
         &__icons {
-            display: flex;
+            display: flex; /* To center icon */
+            justify-content: center;
             align-items: center;
         }
     }

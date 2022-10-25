@@ -24,6 +24,39 @@
     left: 1rem;
 }
 
+.fa-xl {
+    line-height: 100% !important; 
+}
+
 .fa-2xl {
     padding-right: 1rem;
+    line-height: 100% !important; 
 }
+
+.heart-icon {
+    position: absolute;
+    background-color: white;
+    transition: opacity 600ms ease-in-out;
+
+    &--bg {
+        background-color: $color-bg-grey;
+    }
+
+    &:hover {
+        opacity: 0;
+        cursor: pointer;
+      }
+
+    &__animation {
+        background: linear-gradient(350deg, rgba(147,86,220,1) 45%, rgba(255,121,218,1) 100%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}
+
+/* add bg grey behind the heart in pages retaurants */
+.bg-grey {
+    background-color: $color-bg-grey;
+}
+
