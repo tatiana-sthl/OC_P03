@@ -1,0 +1,14 @@
+.animation {
+    opacity:0;
+    animation: transition 1s ease-in-out 2s forwards;
+}
+
+@keyframes animation {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
