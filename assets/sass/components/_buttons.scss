@@ -6,6 +6,12 @@ button {
     background: linear-gradient(350deg, rgba(147,86,220,1) 45%, rgba(255,121,218,1) 100%);
     box-shadow: 2px 10px 20px -8px rgba(0,0,0,0.48);
     color: white;
+    transition: 500ms ease-in-out;
+
+    &:hover {
+        opacity: 0.75;
+        box-shadow: 2px 5px 15px darken($color-bg-grey, 70%);
+    }
 }
 
 .button-command {

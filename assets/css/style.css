@@ -131,6 +131,11 @@ button {
   background: linear-gradient(350deg, rgb(147, 86, 220) 45%, rgb(255, 121, 218) 100%);
   box-shadow: 2px 10px 20px -8px rgba(0, 0, 0, 0.48);
   color: white;
+  transition: 500ms ease-in-out;
+}
+button:hover {
+  opacity: 0.75;
+  box-shadow: 2px 5px 15px #453f3f;
 }
 
 .button-command {
