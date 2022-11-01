@@ -47,6 +47,13 @@
         margin: 0 0 1.5rem 0;
         font-weight: 300;
         font-size: 20px;
+        animation: gradualmenu 400ms ease-in-out both;
+
+        @for $i from 1 through 3 {
+            &--#{$i} {
+                animation-delay: 200ms*$i ;
+            }
+        } 
 
         &::after { 
             content: ""; 
@@ -75,6 +82,13 @@
     &__starters {
         margin: 2rem 0 0 0;
         width: 100%;
+        animation: gradualmenu 400ms ease-in-out both;
+        
+        @for $i from 1 through 3 {
+            &--#{$i} {
+                animation-delay: 200ms+200ms*$i ;
+            }
+        }  
 
         @include desktop-only {
             margin: 1rem;
@@ -91,7 +105,13 @@
         background-color: white;
         box-shadow: 2px 2px 15px #bdbdbd;
         overflow: hidden;
-        transition: 600ms ease-in-out;
+        animation: gradualmenu 600ms ease-in-out both;
+
+        @for $i from 1 through 4 {
+            &--#{$i} {
+                animation-delay: 700ms+200ms*$i ;
+            }
+        }
 
         &:hover {
             .menu-container__card__check {

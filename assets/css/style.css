@@ -2,11 +2,13 @@
 /* margins & paddings */
 /* width */
 @keyframes gradualmenu {
-  0% {
-    transform: scale(0);
+  from {
+    transform: scale(0, 10px);
+    opacity: 0;
   }
-  100% {
-    transform: scale(1);
+  to {
+    transform: scale(0, 0px);
+    opacity: 1;
   }
 }
 @keyframes check {
@@ -378,6 +380,16 @@ button:hover {
   margin: 0 0 1.5rem 0;
   font-weight: 300;
   font-size: 20px;
+  animation: gradualmenu 400ms ease-in-out both;
+}
+.menu__title-h2--1 {
+  animation-delay: 200ms;
+}
+.menu__title-h2--2 {
+  animation-delay: 400ms;
+}
+.menu__title-h2--3 {
+  animation-delay: 600ms;
 }
 .menu__title-h2::after {
   content: "";
@@ -404,6 +416,16 @@ button:hover {
 .menu-container__starters {
   margin: 2rem 0 0 0;
   width: 100%;
+  animation: gradualmenu 400ms ease-in-out both;
+}
+.menu-container__starters--1 {
+  animation-delay: 400ms;
+}
+.menu-container__starters--2 {
+  animation-delay: 600ms;
+}
+.menu-container__starters--3 {
+  animation-delay: 800ms;
 }
 @media screen and (min-width: 992px) {
   .menu-container__starters {
@@ -420,7 +442,19 @@ button:hover {
   background-color: white;
   box-shadow: 2px 2px 15px #bdbdbd;
   overflow: hidden;
-  transition: 600ms ease-in-out;
+  animation: gradualmenu 600ms ease-in-out both;
+}
+.menu-container__card--1 {
+  animation-delay: 900ms;
+}
+.menu-container__card--2 {
+  animation-delay: 1100ms;
+}
+.menu-container__card--3 {
+  animation-delay: 1300ms;
+}
+.menu-container__card--4 {
+  animation-delay: 1500ms;
 }
 .menu-container__card:hover .menu-container__card__check {
   visibility: visible;
