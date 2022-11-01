@@ -119,6 +119,10 @@
   left: 1rem;
 }
 
+.fa-circle-check {
+  color: white;
+}
+
 .fa-xl {
   line-height: 100% !important;
 }
@@ -396,17 +400,39 @@ button:hover {
   border-radius: 20px;
   background-color: white;
   box-shadow: 2px 2px 15px #bdbdbd;
+  overflow: hidden;
+  transition: 600ms ease-in-out;
+}
+.menu-container__card:hover .menu-container__card__check {
+  visibility: visible;
 }
 .menu-container__card__title-h3 {
   margin: 0 0 0.2rem 0;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 .menu-container__card__p-text {
   margin: 0px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 .menu-container__card__p-number {
   align-self: flex-end;
   font-weight: bold;
   margin: 0;
+}
+.menu-container__card__check {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #99E2D0;
+  width: 40%;
+  padding: 0 1.3rem;
+  margin: -1rem -1rem -1rem 1rem;
+  transition-duration: 1000ms;
+  visibility: hidden;
 }
 
 .button-command-container {
