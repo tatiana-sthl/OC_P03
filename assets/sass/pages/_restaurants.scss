@@ -69,20 +69,21 @@
     @include desktop-only {
         display: flex;
         flex-direction: row;
-        justify-content: center;
+        justify-content: space-around;
     }
 
     &__starters {
         margin: 2rem 0 0 0;
 
         @include desktop-only {
-            margin: 2rem;
+            margin: 1rem;
+            width: 28%;
         }
     }
 
     &__card {
         display: flex;
-        justify-content: space-between;
+        justify-content: flex-start;
         margin: 0.8rem -0.2rem;
         padding: 0.8rem;
         border-radius: 20px;
@@ -94,7 +95,21 @@
         &:hover {
             .menu-container__card__check {
                 visibility: visible;
+                margin: -1rem;
             }
+
+            .menu-container__card__p-number {
+                margin-right: 2rem;
+                transition-duration: 1000ms;
+            }
+        }
+
+        &__text {
+            justify-content: space-around;
+            flex: 1;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
         }
         
         &__title-h3 {
@@ -108,13 +123,15 @@
             margin: $no-margin;   
             white-space: nowrap;
             text-overflow: ellipsis;
-            overflow: hidden; 
+            overflow: hidden;
         }
 
         &__p-number {
             align-self: flex-end;
+            align-items: flex-end;
             font-weight: bold;
-            margin: 0;
+            margin: 0 1.5rem 0 0;
+            transition-duration: 1000ms;
         }
 
         &__check {
@@ -122,9 +139,8 @@
             align-items: center;
             justify-content: center;
             background-color: $color-tertiary;
-            width: 40%;
             padding: 0 1.3rem;
-            margin: -1rem -1rem -1rem 1rem;
+            margin: -1rem -6rem -1rem 1rem;
             transition-duration: 1000ms;
             visibility: hidden;
         }
