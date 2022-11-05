@@ -20,6 +20,12 @@
     transition: ease-in-out;
   }
 }
+/* loading */
+@keyframes loading {
+  100% {
+    visibility: hidden;
+  }
+}
 @keyframes sh-0 {
   0%, 9%, 91%, 100% {
     background: #9356DC;
@@ -228,12 +234,14 @@ button:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.808);
   z-index: 100;
+  animation: loading 3500ms cubic-bezier(0.075, 0.82, 0.165, 1);
+  animation-fill-mode: both;
 }
 .loading__shape {
-  width: 100px;
-  height: 100px;
+  width: 80px;
+  height: 80px;
   display: grid;
   animation: sh-0 1.5s infinite linear;
 }

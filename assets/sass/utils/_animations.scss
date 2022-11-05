@@ -19,6 +19,14 @@
     }
 }
 
+/* loading */
+
+@keyframes loading {
+    100% {
+        visibility: hidden;
+    }
+}
+
 @keyframes sh-0 {
     0%,9%,91%,100% {background: $color-primary}
     10%,90%        {background:#0000}
