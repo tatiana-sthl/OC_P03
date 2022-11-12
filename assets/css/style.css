@@ -3,11 +3,11 @@
 /* width */
 @keyframes gradualmenu {
   from {
-    transform: scale(0, 10);
+    transform: scale(0, 10px);
     opacity: 0;
   }
   to {
-    transform: scale(0, 0);
+    transform: scale(0, 0px);
     opacity: 1;
   }
 }
