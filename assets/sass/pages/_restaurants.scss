@@ -82,7 +82,7 @@
     &__starters {
         margin: 2rem 0 0 0;
         width: 100%;
-        animation: gradualmenu 400ms ease-in-out both;
+        animation: gradualmenu 1000ms ease-in-out both;
         
         @for $i from 1 through 3 {
             &--#{$i} {

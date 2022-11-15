@@ -2,12 +2,12 @@
 /* margins & paddings */
 /* width */
 @keyframes gradualmenu {
-  from {
-    transform: scale(0, 10px);
+  0% {
+    transform: translate(0, 10px);
     opacity: 0;
   }
-  to {
-    transform: scale(0, 0px);
+  100% {
+    transform: translate(0, 0);
     opacity: 1;
   }
 }
@@ -476,7 +476,7 @@ button:hover {
 .menu-container__starters {
   margin: 2rem 0 0 0;
   width: 100%;
-  animation: gradualmenu 400ms ease-in-out both;
+  animation: gradualmenu 1000ms ease-in-out both;
 }
 .menu-container__starters--1 {
   animation-delay: 400ms;
